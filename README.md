@@ -2,7 +2,7 @@
 Our team wants to create a game that focuses on graphics and fun gameplay
 
 # Team Members and Roles
-* Memphis:code
+* Memphis:coder
 * Roan: Lead Developer
 * Finn: Graphics
 * Grady: Absent
