@@ -4,7 +4,7 @@ Our team
 # Team Members and Roles
 * Memphis:
 * Roan:
-* Finn:
+* Finn: Graphics
 * Grady:
 * Riley:
 
