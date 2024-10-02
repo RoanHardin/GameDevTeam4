@@ -2,7 +2,7 @@
 Our team wants to create a game that focuses on character movement and fun gameplay
 
 # Team Members and Roles
-* Memphis:coder
+* Memphis: Coder
 * Roan: Lead Developer
 * Finn: Graphics
 * Grady: Absent
