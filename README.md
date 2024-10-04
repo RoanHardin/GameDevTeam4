@@ -19,4 +19,5 @@ Our team wants to create a game that focuses on character movement and fun gamep
 
 ![image](https://github.com/user-attachments/assets/44e3c804-163e-4f62-8091-5ed7f1caa0a9)
 
+![image](https://github.com/user-attachments/assets/38c7aca6-a6f9-497c-8af6-535c337bdd14)
 
