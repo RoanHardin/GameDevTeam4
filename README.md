@@ -13,4 +13,6 @@ Our team wants to create a game that focuses on character movement and fun gamep
 # Overview of Game #2
 
 # Images of Mockups
+
+# Start Screen
 ![image](https://github.com/user-attachments/assets/3589f6f1-c024-41b9-99e3-8240434336ca)
