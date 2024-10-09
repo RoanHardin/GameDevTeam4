@@ -5,7 +5,7 @@ class Character {
 
 
   // Constructor
- Character() {
+  Character() {
     x = 0;
     y = 0;
     z = 0;
@@ -14,11 +14,15 @@ class Character {
     speed = 5;
     lives = 3;
     c1 = loadImage("");
-    alive = false
- } 
+  }
 
   // Member Methods
-  void display() {}
+  void display() {
+    imageMode(CENTER);
+    f1.resize(50,50);
+    image(c1,x,y);
+  }
 
-  void move(char dir) {}
+  void move(char dir) {
+  }
 }
