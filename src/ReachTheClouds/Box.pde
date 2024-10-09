@@ -17,11 +17,8 @@ b1 = loadImage("");
 void display() {
 imageMode(CENTER);
 b1.resize(50,50);
-image(p1,x,y):
+image(b1,x,y):
 
 }
-
-
-
 
 }
