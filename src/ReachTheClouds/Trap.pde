@@ -12,7 +12,11 @@ Trap() {
   t1 = loadImage("");
 }
 // Member Methods
-void display() {}
+void display() {
+  imageMode(CENTER);
+  t1.resize(50,50);
+  image(t1,x,y);
+}
 
 void move(char dir) {}
 }
