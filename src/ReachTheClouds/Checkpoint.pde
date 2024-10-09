@@ -9,12 +9,16 @@ Checkpoint() {
 x = 0;
 y = 0;
 z = 0;
-p1 = loadImage("")
+p1 = loadImage("");
 }
 
 
 // Member Methods
-void display() {}
+void display() {
+  imageMode(CENTER);
+  p1.resize(50,50);
+image(p1,x,y);
+}
 
 
 
