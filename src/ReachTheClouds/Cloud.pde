@@ -1,19 +1,20 @@
 class Cloud {
 // member variables
-int x,y,z,size,c1
-pImage c1;
+int x,y,z,size;
+PImage f1;
 
 // constructor
-cloud() {
-x = o;
-y = o;
+Cloud() {
+x = 0;
+y = 0;
 z = 0;
 size = 50;
-c1 = loadImage("");
+f1 = loadImage("");
 }
 
 //member methods
 void display () {}
+
 
 
 
