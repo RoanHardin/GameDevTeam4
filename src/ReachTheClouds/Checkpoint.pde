@@ -16,7 +16,7 @@ p1 = loadImage("");
 // Member Methods
 void display() {
   imageMode(CENTER);
-  p1.resize(50,50);
+  p1.resize(x,y);
 image(p1,x,y);
 }
 

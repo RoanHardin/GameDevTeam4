@@ -1,3 +1,4 @@
+// Roan Hardin
 class Box {
 // Member Variables
 int x,y,z;
@@ -6,10 +7,9 @@ PImage b1;
 
 //Constructor
 Box() {
-x = 0;
-y = 0;
+x = 50;
+y = 50;
 z = 0;
-b1 = loadImage("");
 }
 
 

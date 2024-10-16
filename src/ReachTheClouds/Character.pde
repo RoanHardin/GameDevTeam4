@@ -19,7 +19,7 @@ class Character {
   // Member Methods
   void display() {
     imageMode(CENTER);
-    f1.resize(50,50);
+    c1.resize(50,50);
     image(c1,x,y);
   }
 
