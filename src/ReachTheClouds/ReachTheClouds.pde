@@ -1,12 +1,14 @@
 // Roan Hardin | ReachTheClouds | 9 Oct 2024
 
 Box box;
+Cloud cloud;
 Character c1;
 boolean play;
 void setup() {
 size(500,500);
   
   box = new Box ();
+  cloud = new Cloud();
   c1 = new Character();
   play = false;
 }
@@ -16,6 +18,7 @@ void draw() {
   } else {
     playScreen();
     box.display();
+    cloud.display();
   }
 }
 

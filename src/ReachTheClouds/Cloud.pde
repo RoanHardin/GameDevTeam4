@@ -1,3 +1,4 @@
+// Roan Hardin
 class Cloud {
 // member variables
 int x,y,z,size;
@@ -5,15 +6,16 @@ PImage f1;
 
 // constructor
 Cloud() {
-x = 0;
-y = 0;
-z = 0;
-size = 50;
-f1 = loadImage("");
+f1 = loadImage("cloud.png");
+x = 200;
+y = 200;
+z = 200;
 }
 
 //member methods
-void display () {}
+void display () {
+image(f1,x,y);
+}
 
 
 
