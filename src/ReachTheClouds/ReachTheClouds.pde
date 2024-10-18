@@ -5,6 +5,7 @@ Character c1;
 boolean play;
 void setup() {
 size(500,500);
+  
   box = new Box ();
   c1 = new Character();
   play = false;
@@ -14,6 +15,7 @@ void draw() {
     startScreen();
   } else {
     playScreen();
+    box.display();
   }
 }
 
