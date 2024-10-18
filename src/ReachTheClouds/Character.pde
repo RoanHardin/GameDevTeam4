@@ -1,3 +1,4 @@
+//Finn Thompson|1A
 class Character {
   // Member Variables
   int x, y, z, w, h, speed, lives;
