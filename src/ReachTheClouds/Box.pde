@@ -17,7 +17,7 @@ z = 50;
 //Member Methods
 void display() {
 imageMode(CENTER);
-b1.resize(x,y);
+b1.resize(50,50);
 image(b1,x,y);
 
 }
