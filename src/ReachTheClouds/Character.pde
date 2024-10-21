@@ -14,7 +14,7 @@ class Character {
     h = 50;
     speed = 5;
     lives = 3;
-    c1 = loadImage("");
+    c1 = loadImage("New Piskel.png");
   }
 
   // Member Methods

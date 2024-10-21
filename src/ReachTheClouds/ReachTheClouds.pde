@@ -29,6 +29,7 @@ void draw() {
     box.display();
     cloud.display();
     p1.display();
+    c1.display();
   }
 }
 
