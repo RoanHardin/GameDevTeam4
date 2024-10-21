@@ -14,6 +14,7 @@ z = 200;
 
 //member methods
 void display () {
+  f1.resize(100,50);
 image(f1,x,y);
 }
 

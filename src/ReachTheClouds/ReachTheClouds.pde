@@ -3,26 +3,29 @@
 Box box;
 Cloud cloud;
 Character c1;
+Checkpoint p1;
 boolean play;
-PImage b01, b02;
-
-
+Timer timer;
 void setup() {
   size(500, 500);
   box = new Box ();
   cloud = new Cloud();
   c1 = new Character();
+  p1 = new Checkpoint();
   play = false;
-  b01 = loadImage("StrScrn.png");
-  b02 = loadImage("bckg.png");
+  timer = new Timer(1000);
+  timer.start();
 }
 void draw() {
+  if(timer.isFinished()) {
+  }
   if (play == false) {
     startScreen();
   } else {
     playScreen();
     box.display();
     cloud.display();
+    p1.display();
   }
 }
 
@@ -33,7 +36,7 @@ void keyPressed() {
 }
 
 void startScreen() {
-  background(b01);
+  background(0);
   fill(255);
   text("Click to start!", width/2, height/2);
   if (mousePressed || keyPressed) {
@@ -41,6 +44,6 @@ void startScreen() {
   }
 }
 void playScreen() {
-  background(b02);
+  background(255);
   fill(0);
 }
