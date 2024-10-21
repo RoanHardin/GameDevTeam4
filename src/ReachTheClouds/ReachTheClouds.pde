@@ -6,6 +6,7 @@ Character c1;
 Checkpoint p1;
 boolean play;
 Timer timer;
+PImage b01, b02;
 void setup() {
   size(500, 500);
   box = new Box ();
@@ -15,6 +16,8 @@ void setup() {
   play = false;
   timer = new Timer(1000);
   timer.start();
+  b01 = loadImage("StrScrn.png");
+  b02 = loadImage("bckg.png");
 }
 void draw() {
   if(timer.isFinished()) {
@@ -36,7 +39,7 @@ void keyPressed() {
 }
 
 void startScreen() {
-  background(0);
+  background(b01);
   fill(255);
   text("Click to start!", width/2, height/2);
   if (mousePressed || keyPressed) {
@@ -44,6 +47,6 @@ void startScreen() {
   }
 }
 void playScreen() {
-  background(255);
+  background(b02);
   fill(0);
 }
