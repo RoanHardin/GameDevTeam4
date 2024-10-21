@@ -42,7 +42,7 @@ void keyPressed() {
 void startScreen() {
   background(b01);
   fill(255);
-  text("Click to start!", width/2, height/2);
+  text("", width/2, height/2);
   if (mousePressed || keyPressed) {
     play = true;
   }
