@@ -7,8 +7,8 @@ class Character {
 
   // Constructor
   Character() {
-    x = 0;
-    y = 0;
+    x = 250;
+    y = 250;
     z = 0;
     w = 50;
     h = 50;
