@@ -6,17 +6,17 @@ PImage p1;
 
 //Constructor
 Checkpoint() {
-x = 0;
-y = 0;
+x = 250;
+y = 250;
 z = 0;
-p1 = loadImage("");
+p1 = loadImage("Checkpoint.png");
 }
 
 
 // Member Methods
 void display() {
   imageMode(CENTER);
-  p1.resize(x,y);
+  p1.resize(50,50);
 image(p1,x,y);
 }
 
