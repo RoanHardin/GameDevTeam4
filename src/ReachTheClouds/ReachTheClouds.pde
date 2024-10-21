@@ -7,6 +7,9 @@ Checkpoint p1;
 boolean play;
 Timer timer;
 PImage b01, b02;
+
+
+
 void setup() {
   size(500, 500);
   box = new Box ();
@@ -31,6 +34,7 @@ void draw() {
     p1.display();
     c1.display();
   }
+  
 }
 
 void mousePressed() {
