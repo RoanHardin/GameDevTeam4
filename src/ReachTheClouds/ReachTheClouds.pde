@@ -4,15 +4,19 @@ Box box;
 Cloud cloud;
 Character c1;
 boolean play;
+Timer timer;
 void setup() {
-size(500,500);
-  
+  size(500, 500);
   box = new Box ();
   cloud = new Cloud();
   c1 = new Character();
   play = false;
+  timer = new Timer(1000);
+  timer.start();
 }
 void draw() {
+  if(timer.isFinished()) {
+  }
   if (play == false) {
     startScreen();
   } else {
@@ -36,8 +40,7 @@ void startScreen() {
     play = true;
   }
 }
-void playScreen(){
+void playScreen() {
   background(255);
   fill(0);
-
 }
