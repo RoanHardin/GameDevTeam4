@@ -9,7 +9,7 @@ Checkpoint() {
 x = 0;
 y = 0;
 z = 0;
-p1 = loadImage("");
+p1 = loadImage("Checkpoint.png");
 }
 
 
