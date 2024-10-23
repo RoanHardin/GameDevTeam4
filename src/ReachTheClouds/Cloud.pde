@@ -26,7 +26,7 @@ void move (){
 
 
 
-}
+
   //member methods
   void display () {
     f1.resize(128,128);

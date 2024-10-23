@@ -6,7 +6,7 @@ class Platform {
 
   //Constructor
   Platform() {
-    p01 = loadImage("platform.jpf");
+    p01 = loadImage("platform.png");
     x = 50;
     y = 50;
     z = 50;

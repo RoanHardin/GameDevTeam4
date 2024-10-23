@@ -9,7 +9,7 @@ class Trap {
     y = 0;
     z = 0;
     size = 100;
-    t1 = loadImage("");
+    t1 = loadImage("trapz.png");
   }
   // Member Methods
   void display() {
