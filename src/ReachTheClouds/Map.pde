@@ -1,3 +1,4 @@
-class Map {}
+class Map {
+}
 // member variables
-int x,y,z;
+int x, y, z;

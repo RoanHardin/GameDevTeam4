@@ -23,7 +23,7 @@ void setup() {
   b02 = loadImage("bckg.png");
 }
 void draw() {
-  if(timer.isFinished()) {
+  if (timer.isFinished()) {
   }
   if (play == false) {
     startScreen();
@@ -33,8 +33,8 @@ void draw() {
     cloud.display();
     p1.display();
     c1.display();
+    c1.move();
   }
-  
 }
 
 void mousePressed() {

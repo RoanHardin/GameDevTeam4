@@ -1,18 +1,15 @@
 //Finn Thompson|1A
 class Character {
   // Member Variables
-  int  z, w, h, lives;
+  int  w, h, lives;
   PImage c1;
   int playerX = 100;
-int playerY = 100;
-int speed = 5;
+  int playerY = 100;
+  int speed = 5;
 
 
   // Constructor
   Character() {
-    
-    
-    z = 0;
     w = 50;
     h = 50;
     lives = 3;
@@ -23,32 +20,24 @@ int speed = 5;
   // Member Methods
   void display() {
     imageMode(CENTER);
-    c1.resize(50,50);
-    image(c1,playerX,playerY);
+    c1.resize(50, 50);
+    image(c1, playerX, playerY);
   }
-void draw(){
-// Player control
+  void move() {
+    // Player control
   if (keyPressed) {
     if (keyCode == UP) {
-      playerY = playerY+10;
+      playerY -= speed;
     }
-    else if (keyCode == DOWN) {
-      playerY = playerY-10;
+    if (keyCode == DOWN) {
+      playerY += speed;
     }
-    else if (keyCode == LEFT) {
-      playerX = playerX-10;
+    if (keyCode == LEFT) {
+      playerX -= speed;
     }
-    else if (keyCode == RIGHT) {
-      playerX = playerX+10;
+    if (keyCode == RIGHT) {
+      playerX += speed;
     }
-    fill(0);
-
   }
-
-
-
-
-}
-
-
+  }
 }
