@@ -39,5 +39,19 @@ class Character {
       playerX += speed;
     }
   }
+  if (keyPressed) {
+    if (key == 'w') {
+      playerY -= speed;
+    }
+    if (key == 's') {
+      playerY += speed;
+    }
+    if (key =='a') {
+      playerX -= speed;
+    }
+    if (key == 'd') {
+      playerX += speed;
+    }
+  }
   }
 }

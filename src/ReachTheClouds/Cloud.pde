@@ -9,7 +9,7 @@ class Cloud {
   Cloud() {
     f1 = loadImage("cloud.png");
    cloudX = int(random(width));
-  cloudY = int(random(height));
+  cloudY = int(random(0,150));
   speedX = int(random(-5, 5));
   
   }
