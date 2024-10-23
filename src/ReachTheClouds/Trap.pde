@@ -5,8 +5,8 @@ class Trap {
 
   // Constructor
   Trap() {
-    x = 0;
-    y = 0;
+    x = 300;
+    y = 300;
     z = 0;
     size = 100;
     t1 = loadImage("trapz.png");
@@ -14,7 +14,7 @@ class Trap {
   // Member Methods
   void display() {
     imageMode(CENTER);
-    t1.resize(50, 50);
+    t1.resize(100, 29);
     image(t1, x, y);
   }
 

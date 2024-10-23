@@ -8,12 +8,14 @@ Checkpoint p1;
 boolean play;
 Timer timer;
 PImage b01, b02;
+Trap trap;
 
 
 
 void setup() {
   size(500, 500);
   box = new Box ();
+  trap = new Trap();
   platform = new Platform();
   cloud = new Cloud();
   c1 = new Character();
@@ -38,6 +40,7 @@ void draw() {
     p1.display();
     c1.display();
     c1.move();
+    trap.display();
   }
 }
 
