@@ -2,6 +2,7 @@
 
 Box box;
 Cloud cloud;
+Platform platform;
 Character c1;
 Checkpoint p1;
 boolean play;
@@ -13,6 +14,7 @@ PImage b01, b02;
 void setup() {
   size(500, 500);
   box = new Box ();
+  platform = new Platform();
   cloud = new Cloud();
   c1 = new Character();
   p1 = new Checkpoint();
@@ -31,6 +33,7 @@ void draw() {
     playScreen();
     box.display();
     cloud.display();
+    platform.display();
     cloud.move();
     p1.display();
     c1.display();

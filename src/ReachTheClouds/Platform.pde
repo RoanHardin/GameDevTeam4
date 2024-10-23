@@ -7,16 +7,16 @@ class Platform {
   //Constructor
   Platform() {
     p01 = loadImage("platform.png");
-    x = 50;
-    y = 50;
-    z = 50;
+    x = 250;
+    y = 250;
+    z = 250;
   }
 
 
   //Member Methods
   void display() {
     imageMode(CENTER);
-    p01.resize(50, 50);
+    p01.resize(150,37);
     image(p01, x, y);
   }
 }
