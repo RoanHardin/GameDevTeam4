@@ -31,6 +31,7 @@ void draw() {
     playScreen();
     box.display();
     cloud.display();
+    cloud.move();
     p1.display();
     c1.display();
     c1.move();
