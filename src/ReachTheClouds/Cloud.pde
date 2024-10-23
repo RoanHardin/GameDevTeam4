@@ -11,7 +11,7 @@ class Cloud {
    cloudX = int(random(width));
   cloudY = int(random(height));
   speedX = int(random(-5, 5));
-  speedY = int(random(-5, 5));
+  
   }
 void move (){
 // Update object position
@@ -22,8 +22,6 @@ void move (){
   if (cloudX < 0 || cloudX > width) {
     speedX *= -1;
   }
-  if (cloudY < 0 || cloudY > height) {
-    speedY *= -1;
   }
 
 
