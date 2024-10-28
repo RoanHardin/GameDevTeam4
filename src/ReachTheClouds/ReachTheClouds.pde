@@ -8,7 +8,7 @@ Character c1;
 Checkpoint p1;
 boolean play;
 Timer timer;
-PImage b01, b02;
+PImage b01, b02, end1;
 Trap trap;
 
 
@@ -27,6 +27,7 @@ void setup() {
   timer.start();
   b01 = loadImage("StrScrn.png");
   b02 = loadImage("bckg.png");
+  end1 = loadImage("endscrn.png");
 }
 void draw() {
   if (timer.isFinished()) {
@@ -72,10 +73,6 @@ void playScreen() {
   fill(0);
 }
 void gameOver() {
-background(0);
-  textAlign(CENTER);
-  textSize(40);
-  fill(255);
-  text("Game Over!",width/2, height/2);
-  text("Score:",width/2, height/2+50);
+background(end1);
+  text("Score:",width/2, height/2-50);
 }
