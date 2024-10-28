@@ -48,7 +48,7 @@ void draw() {
     panel.display();
      // Example of changing data over time (can be removed or replaced with real game logic)
   if (frameCount % 60 == 0) {
-    panel.updateScore(10);     // Increase score every second
+    panel.updateHeight();     // Increase score every second
   }
 }
 
