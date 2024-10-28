@@ -18,5 +18,10 @@ class Checkpoint {
     imageMode(CENTER);
     p1.resize(50, 50);
     image(p1, x, y);
+    
   }
+
+
+
+
 }
