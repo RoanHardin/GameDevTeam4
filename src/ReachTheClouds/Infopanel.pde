@@ -3,14 +3,14 @@
 class InfoPanel {
   int height;
   int lives;
-  int level;
+  int checkpoint;
   float timer;
   
-  InfoPanel(int initialHeight, int initialLives, int initialLevel) {
+  InfoPanel(int initialHeight, int initialLives, int initialCheckpoint) {
     height=initialHeight;
    
     lives = initialLives;
-    level = initialLevel;
+    checkpoint = initialCheckpoint;
     timer = 0;
   }
   
@@ -27,8 +27,8 @@ class InfoPanel {
   }
   
   // Call this function to increase level
-  void nextLevel() {
-    level += 1;
+  void nextCheckpoint() {
+    checkpoint += 1;
   }
 
   // Call this function to update the timer
@@ -55,7 +55,7 @@ class InfoPanel {
     text("Lives: " + lives, 20, 70);
     
     // Display the level
-    text("Level: " + level, 20, 90);
+    text("Checkpoint: " + checkpoint, 20, 90);
     
     // Display the timer
     text("Time: " + nf(timer, 0, 2), 140, 30); // Formatted to 2 decimal places
