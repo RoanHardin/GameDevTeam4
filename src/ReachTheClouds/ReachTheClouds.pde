@@ -72,3 +72,11 @@ void playScreen() {
   background(b02);
   fill(0);
 }
+void gameOver() {
+background(0);
+  textAlign(CENTER);
+  textSize(40);
+  fill(255);
+  text("Game Over!",width/2, height/2);
+  text("Score:",width/2, height/2+50);
+}
