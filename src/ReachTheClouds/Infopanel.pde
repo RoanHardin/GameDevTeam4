@@ -1,14 +1,14 @@
+//Roan Hardin
 // InfoPanel Class to display game information
 class InfoPanel {
   int score;
-  int health;
   int lives;
   int level;
   float timer;
   
-  InfoPanel(int initialScore, int initialHealth, int initialLives, int initialLevel) {
+  InfoPanel(int initialScore, int initialLives, int initialLevel) {
     score = initialScore;
-    health = initialHealth;
+   
     lives = initialLives;
     level = initialLevel;
     timer = 0;
@@ -19,11 +19,7 @@ class InfoPanel {
     score += points;
   }
 
-  // Call this function to update health
-  void updateHealth(int change) {
-    health += change;
-    health = constrain(health, 0, 100); // Health capped at 100
-  }
+ 
   
   // Call this function to update lives
   void updateLives(int change) {
@@ -53,8 +49,7 @@ class InfoPanel {
     // Display the score
     text("Score: " + score, 20, 30);
     
-    // Display the health
-    text("Health: " + health, 20, 50);
+   
     
     // Display the lives
     text("Lives: " + lives, 20, 70);

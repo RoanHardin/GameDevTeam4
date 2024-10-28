@@ -15,7 +15,7 @@ Trap trap;
 
 void setup() {
   size(500, 500);
-    panel = new InfoPanel(0, 100, 3, 1); // Start with 0 score, 100 health, 3 lives, and level 1
+    panel = new InfoPanel(0, 3, 1); // Start with 0 score, 100 health, 3 lives, and level 1
   box = new Box ();
   trap = new Trap();
   platform = new Platform();
@@ -49,7 +49,6 @@ void draw() {
      // Example of changing data over time (can be removed or replaced with real game logic)
   if (frameCount % 60 == 0) {
     panel.updateScore(10);     // Increase score every second
-    panel.updateHealth(-1);    // Decrease health slowly
   }
 }
 
