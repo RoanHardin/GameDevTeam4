@@ -44,9 +44,10 @@ void draw() {
     c1.display();
     c1.move();
     trap.display();
+    panel.display();
   }
    panel.updateTimer(1.0 / frameRate); // Increment based on frame rate
-    panel.display();
+    
      // Example of changing data over time (can be removed or replaced with real game logic)
   if (frameCount % 60 == 0) {
     panel.updateHeight();     // Increase score every second
