@@ -1,3 +1,4 @@
+//Finn Thompson
 class Trap {
   // Member Variables
   int x, y, z, size;
