@@ -3,6 +3,8 @@ class Bomb {
   float speed;  // Speed of raindrop
   color c;
   float r;      // Radius of raindrop
+PImage bomb;
+
 
   Bomb() {
     r = 8;                   // All raindrops are the same size
@@ -30,11 +32,13 @@ class Bomb {
 
   // Display the raindrop
   void display() {
+    bomb = loadImage("bomb.png");
     // Display the drop
     fill(c);
     noStroke();
+    bomb.resize(50,50);
     for (int i = 2; i < r; i++ ) {
-      ellipse(x, y + i*4, i*2, i*2);
+      image(bomb, x, y);
     }
   }
 
