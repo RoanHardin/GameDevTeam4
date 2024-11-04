@@ -1,3 +1,4 @@
+// Roan Hardin
 class Bomb {
   float x, y;   // Variables for location of raindrop
   float speed;  // Speed of raindrop
