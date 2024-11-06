@@ -1,5 +1,5 @@
 // Roan Hardin | ReachTheClouds | 9 Oct 2024
-
+import processing.sound.*;
 InfoPanel panel;
 Box box;
 Cloud cloud;
@@ -11,6 +11,7 @@ Timer t1;
 PImage b01, b02, end1;
 Trap trap;
 ArrayList<Bomb> bombs = new ArrayList<Bomb>();
+SoundFile jump1;
 
 
 void setup() {
@@ -28,9 +29,21 @@ void setup() {
   b01 = loadImage("StrScrn.png");
   b02 = loadImage("bckg.png");
   end1 = loadImage("endscrn.png");
+  background(255);
+    
+  // Load a soundfile from the /data folder of the sketch and play it back
+  jump1 = new SoundFile(this, "jump1.wav");
+  jump1.play();
 }
 void draw() {
-  
+  if (keyPressed) {
+    if (key == 'b' || key == 'B') {
+      jump1.play();
+    }
+  } else {
+    fill(255);
+  }
+  rect(25, 25, 50, 50);
   if (play == false) {
     startScreen();
   } else {
