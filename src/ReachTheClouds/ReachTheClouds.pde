@@ -30,14 +30,11 @@ void setup() {
   b02 = loadImage("bckg.png");
   end1 = loadImage("endscrn.png");
   background(255);
-    
-  // Load a soundfile from the /data folder of the sketch and play it back
   jump1 = new SoundFile(this, "jump1.wav");
-  jump1.play();
 }
 void draw() {
   if (keyPressed) {
-    if (key == 'b' || key == 'B') {
+    if (key == ' ') {
       jump1.play();
     }
   } else {
