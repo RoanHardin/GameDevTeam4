@@ -35,7 +35,9 @@ void setup() {
 void draw() {
   if (keyPressed) {
     if (key == ' ') {
+      if (!jump1.isPlaying()){
       jump1.play();
+      }
     }
   } else {
     fill(255);
