@@ -1,4 +1,5 @@
 //Finn Thompson|1A
+import processing.sound.*;
 class Character {
   // Member Variables
   int  w, h, lives;
@@ -6,6 +7,7 @@ class Character {
   int playerX = 100;
   int playerY = 100;
   int speed = 5;
+  SoundFile jump1;
  
 
 
@@ -60,6 +62,7 @@ class Character {
     float d = dist(x,y,t1.x,t1.y);
     if (d<t1.diam/2) {
       lives -= 1;
+      jump1.play();
       return true;
     } else {
       return false;
