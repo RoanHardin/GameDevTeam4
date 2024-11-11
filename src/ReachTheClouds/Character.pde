@@ -11,7 +11,6 @@ class Character {
 
   // Constructor
   Character() {
-    x = 
     w = 50;   
     h = 50;
     lives = 3;
