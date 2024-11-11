@@ -58,7 +58,7 @@ class Character {
   }
    boolean intersect(Trap t1) {
     float d = dist(x,y,t1.x,t1.y);
-    if (d<t1.diam/2) {
+    if (d<40) {
       lives -= 1;
       return true;
     } else {

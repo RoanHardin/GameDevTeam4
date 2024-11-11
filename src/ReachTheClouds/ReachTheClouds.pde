@@ -68,6 +68,7 @@ void draw() {
       bombs.remove(i);
     }
   }
+  
   }
   panel.updateTimer(1.0 / frameRate); // Increment based on frame rate
 

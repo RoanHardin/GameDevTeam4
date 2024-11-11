@@ -22,8 +22,8 @@ class InfoPanel {
  
   
   // Call this function to update lives
-  void updateLives(int change) {
-    lives += change;
+  void updateLives() {
+    lives = c1.lives;
   }
   
   // Call this function to increase level
@@ -52,7 +52,7 @@ class InfoPanel {
    
     
     // Display the lives
-    text("Lives: " + lives, 20, 70);
+    text("Lives: " + c1.lives, 20, 70);
     
     // Display the level
     text("Checkpoint: " + checkpoint, 20, 90);
