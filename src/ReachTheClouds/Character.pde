@@ -6,14 +6,17 @@ class Character {
   int playerX = 100;
   int playerY = 100;
   int speed = 5;
+ 
 
 
   // Constructor
   Character() {
-    w = 50;
+    x = 
+    w = 50;   
     h = 50;
     lives = 3;
     c1 = loadImage("New Piskel.png");
+    
   }
 
 
@@ -53,5 +56,14 @@ class Character {
       playerX += speed;
     }
   }
+  }
+   boolean intersect(Trap t1) {
+    float d = dist(x,y,t1.x,t1.y);
+    if (d<t1.diam/2) {
+      lives -= 1;
+      return true;
+    } else {
+      return false;
+    }
   }
 }
