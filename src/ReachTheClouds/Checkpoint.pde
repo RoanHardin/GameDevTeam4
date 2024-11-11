@@ -1,3 +1,4 @@
+//Memphis Black
 class Checkpoint {
   // Member Variables
   int x, y, z;
@@ -6,8 +7,8 @@ class Checkpoint {
 
   //Constructor
   Checkpoint() {
-    x = 250;
-    y = 250;
+    x =400;
+    y = 170;
     z = 0;
     p1 = loadImage("Checkpoint.png");
   }

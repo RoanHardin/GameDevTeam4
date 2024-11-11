@@ -8,8 +8,8 @@ class Box {
   //Constructor
   Box() {
     b1 = loadImage("box.jpeg");
-    x = 50;
-    y = 50;
+    x = 80;
+    y = 80;
     z = 50;
   }
 

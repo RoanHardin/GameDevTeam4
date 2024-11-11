@@ -7,8 +7,8 @@ class Platform {
   //Constructor
   Platform() {
     p01 = loadImage("platform.png");
-    x = 250;
-    y = 250;
+    x = 220;
+    y = 150;
     z = 250;
   }
 

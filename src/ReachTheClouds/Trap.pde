@@ -7,8 +7,8 @@ class Trap {
 
   // Constructor
   Trap() {
-    x = 300;
-    y = 300;
+    x = 115;
+    y = 200;
     z = 0;
     size = 100;
     t1 = loadImage("trapz.png");
