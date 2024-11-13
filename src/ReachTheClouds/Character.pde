@@ -59,7 +59,7 @@ class Character {
   }
   }
    boolean intersect(Trap t1) {
-    float d = dist(x,y,t1.x,t1.y);
+    float d = dist(playerX,playerY,t1.x,t1.y);
     if (d<40) {
       lives -= 1;
       jump1.play();

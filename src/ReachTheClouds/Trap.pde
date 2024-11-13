@@ -1,18 +1,17 @@
 //Finn Thompson
 class Trap {
   // Member Variables
-  int x, y, z, size;
+  int x, y, size;
   PImage t1;
   int diam = int(random(100));
 
   // Constructor
-  Trap() {
-    x = 115;
-    y = 200;
+  Trap(int x, int y) {
+    this.x=x;
+    this.y=y;
     z = 0;
     size = 100;
     t1 = loadImage("trapz.png");
-
   }
   // Member Methods
   void display() {
@@ -23,13 +22,14 @@ class Trap {
 
   void move(char dir) {
   }
-}
 
-boolean intersect(Character c1) {
-  float d = dist(x,y,c1.playerX,c1.playerY);
-    if (d<40) { // refine the collision detection
+
+  boolean intersect(Character c1) {
+    float d = dist(x, y, c1.playerX, c1.playerY);
+    if (d<35) { // refine the collision detection
       return true;
     } else {
       return false;
     }
   }
+}

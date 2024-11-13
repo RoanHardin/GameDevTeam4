@@ -9,16 +9,18 @@ Checkpoint p1;
 boolean play;
 Timer t1;
 PImage b01, b02, end1;
-Trap trap;
+//Trap trap;
 ArrayList<Bomb> bombs = new ArrayList<Bomb>();
+ArrayList<Character> characters = new ArrayList<Character>();
 SoundFile jump1;
-
+ArrayList<Trap> traps = new ArrayList<Trap>();
 
 void setup() {
   size(500, 500);
+  traps.add(new Trap(115, 200));
   panel = new InfoPanel(0, 3, 1); // Start with 0 score, 100 health, 3 lives, and level 1
   box = new Box ();
-  trap = new Trap();
+  //trap = new Trap();
   platform = new Platform();
   cloud = new Cloud();
   c1 = new Character();
@@ -35,8 +37,8 @@ void setup() {
 void draw() {
   if (keyPressed) {
     if (key == ' ') {
-      if (!jump1.isPlaying()){
-      jump1.play();
+      if (!jump1.isPlaying()) {
+        jump1.play();
       }
     }
   } else {
@@ -47,6 +49,15 @@ void draw() {
     startScreen();
   } else {
     playScreen();
+    for (int i = 0; i < traps.size(); i++) {
+      Trap t = traps.get(i);
+      t.display();
+      if (t.intersect(c1)) {
+        c1.lives --;
+        c1.playerX = 100;
+        c1.playerY = 100;
+      }
+    }
     box.display();
     cloud.display();
     platform.display();
@@ -54,21 +65,20 @@ void draw() {
     p1.display();
     c1.display();
     c1.move();
-    trap.display();
+    //trap.display();
     panel.display();
     if (t1.isFinished()) {
-    bombs.add(new Bomb());
-    t1.start();
-  }
-  for (int i = 0; i < bombs.size(); i++) {
-    Bomb bomb = bombs.get(i);
-    bomb.display();
-    bomb.move();
-    if (bomb.reachedBottom()) {
-      bombs.remove(i);
+      bombs.add(new Bomb());
+      t1.start();
     }
-  }
-  
+    for (int i = 0; i < bombs.size(); i++) {
+      Bomb bomb = bombs.get(i);
+      bomb.display();
+      bomb.move();
+      if (bomb.reachedBottom()) {
+        bombs.remove(i);
+      }
+    }
   }
   panel.updateTimer(1.0 / frameRate); // Increment based on frame rate
 
@@ -76,8 +86,17 @@ void draw() {
   if (frameCount % 60 == 0) {
     panel.updateHeight();     // Increase score every second
   }
-}
 
+  //for (int i = 0; i < characters.size(); i++) {
+  //  Character c1 = characters.get(i);
+  //  for (int j = 0; j< traps.size(); j++) {
+  //    Trap t1 = traps.get(j);
+  //    if (c1.intersect(t1)) {
+  //      c1.lives+=1;
+  //    }
+  //  }
+  //}
+}
 
 void mousePressed() {
 }
