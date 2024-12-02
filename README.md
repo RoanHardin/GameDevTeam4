@@ -5,8 +5,8 @@ Our team wants to create a game that focuses on character movement and fun gamep
 * Memphis: Coder
 * Roan: Lead Developer
 * Finn: Graphics
-* Grady: Absent
-* Riley: Absent
+* Grady: Coder
+* Riley: Sound designer
 
 # Overview of Game #1
 
