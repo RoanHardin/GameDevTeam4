@@ -111,6 +111,14 @@ void keyPressed() {
 void startScreen() {
   background(b01);
 
+  text("", width/2, height/2);
+  if (mousePressed || keyPressed) {
+    play = true;
+  }
+}
+void playScreen() {
+  background(b02);
+  if(play == true){
   if (wTime.isFinished()) {
     wTime.start();
     welcomeCounter++;
@@ -120,25 +128,23 @@ void startScreen() {
     fill(255);
     textSize(40);
     textAlign(CENTER);
-    text("you are about to", 250, 250);
+    text("you are about to experience", 250, 250);
     wTime.totalTime=2000;
     break;
   case 1:
     fill(255);
-    text("a journey like", 250,250);
+    text("a journey like no other", 250,250);
     break;
   default:
     println("None");
     break;
   }
-  text("", width/2, height/2);
-  if (mousePressed || keyPressed) {
-    play = true;
-  }
 }
-void playScreen() {
-  background(b02);
-  fill(0);
+  
+}
+void loreScreen(){
+  fill (255);
+
 }
 void gameOver() {
   background(end1);
