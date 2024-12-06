@@ -7,7 +7,7 @@ int welcomeCounter;
 Platform platform;
 Character c1;
 Checkpoint p1;
-boolean play;
+boolean play, lore;
 Timer t1, wTime;
 PImage b01, b02, end1;
 //Trap trap;
@@ -49,9 +49,11 @@ void draw() {
     fill(255);
   }
   rect(25, 25, 50, 50);
+  
   if (play == false) {
     startScreen();
-  } else {
+  }
+  if (play == true) {
     playScreen();
     for (int i = 0; i < traps.size(); i++) {
       Trap t = traps.get(i);
@@ -84,6 +86,30 @@ void draw() {
       }
     }
   }
+  if (lore == true){
+    loreScreen();
+  if (wTime.isFinished()) {
+    wTime.start();
+    welcomeCounter++;
+  }
+  switch(welcomeCounter) {
+  case 0:
+    fill(255);
+    textSize(40);
+    textAlign(CENTER);
+    text("you are about to experience", 250, 250);
+    wTime.totalTime=2000;
+    break;
+  case 1:
+    fill(255);
+    text("a journey like no other", 250,250);
+    break;
+  default:
+    println("None");
+    break;
+  
+}
+  }
   panel.updateTimer(1.0 / frameRate); // Increment based on frame rate
 
   // Example of changing data over time (can be removed or replaced with real game logic)
@@ -113,37 +139,16 @@ void startScreen() {
 
   text("", width/2, height/2);
   if (mousePressed || keyPressed) {
-    play = true;
+    lore = true;
   }
 }
 void playScreen() {
   background(b02);
-  if(play == true){
-  if (wTime.isFinished()) {
-    wTime.start();
-    welcomeCounter++;
-  }
-  switch(welcomeCounter) {
-  case 0:
-    fill(255);
-    textSize(40);
-    textAlign(CENTER);
-    text("you are about to experience", 250, 250);
-    wTime.totalTime=2000;
-    break;
-  case 1:
-    fill(255);
-    text("a journey like no other", 250,250);
-    break;
-  default:
-    println("None");
-    break;
-  }
-}
+  
   
 }
 void loreScreen(){
-  fill (255);
+  fill (0);
 
 }
 void gameOver() {
