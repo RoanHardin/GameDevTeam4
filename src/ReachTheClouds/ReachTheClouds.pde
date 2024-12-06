@@ -9,7 +9,7 @@ Character c1;
 Checkpoint p1;
 boolean play, lore;
 Timer t1, wTime;
-PImage b01, b02, end1;
+PImage b01, b02, end1, story1, story2, story3;
 //Trap trap;
 ArrayList<Bomb> bombs = new ArrayList<Bomb>();
 ArrayList<Character> characters = new ArrayList<Character>();
@@ -35,6 +35,9 @@ void setup() {
   b01 = loadImage("StrScrn.png");
   b02 = loadImage("bckg.png");
   end1 = loadImage("endscrn.png");
+  story1 = loadImage("story1.png");
+  story2 = loadImage("story2.png");
+  story3 = loadImage("story3.png");
   background(255);
   jump1 = new SoundFile(this, "jump1.wav");
 }
@@ -91,6 +94,7 @@ void draw() {
   if (wTime.isFinished()) {
     wTime.start();
     welcomeCounter++;
+
   }
   switch(welcomeCounter) {
   case 0:
@@ -103,12 +107,15 @@ void draw() {
   case 1:
     fill(255);
     text("a journey like no other", 250,250);
+    wTime.totalTime=2000;
     break;
+    case 2:
+    text("are you ready", 250, 250);
   default:
     println("None");
     break;
-  
 }
+
   }
   panel.updateTimer(1.0 / frameRate); // Increment based on frame rate
 
@@ -138,9 +145,13 @@ void startScreen() {
   background(b01);
 
   text("", width/2, height/2);
-  if (mousePressed || keyPressed) {
+  if (mousePressed) {
     lore = true;
   }
+  if(keyPressed){
+  play = true;
+}
+  
 }
 void playScreen() {
   background(b02);
@@ -148,7 +159,7 @@ void playScreen() {
   
 }
 void loreScreen(){
-  fill (0);
+  background(story1);
 
 }
 void gameOver() {
