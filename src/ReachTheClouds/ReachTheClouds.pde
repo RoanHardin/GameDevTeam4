@@ -3,11 +3,12 @@ import processing.sound.*;
 InfoPanel panel;
 Box box;
 Cloud cloud;
+int welcomeCounter;
 Platform platform;
 Character c1;
 Checkpoint p1;
 boolean play;
-Timer t1;
+Timer t1, wTime;
 PImage b01, b02, end1;
 //Trap trap;
 ArrayList<Bomb> bombs = new ArrayList<Bomb>();
@@ -28,6 +29,9 @@ void setup() {
   play = false;
   t1 = new Timer(1000);
   t1.start();
+  wTime = new Timer(5000);
+  wTime.start();
+  welcomeCounter = 0;
   b01 = loadImage("StrScrn.png");
   b02 = loadImage("bckg.png");
   end1 = loadImage("endscrn.png");
@@ -106,7 +110,27 @@ void keyPressed() {
 
 void startScreen() {
   background(b01);
-  fill(255);
+
+  if (wTime.isFinished()) {
+    wTime.start();
+    welcomeCounter++;
+  }
+  switch(welcomeCounter) {
+  case 0:
+    fill(255);
+    textSize(40);
+    textAlign(CENTER);
+    text("you are about to", 250, 250);
+    wTime.totalTime=2000;
+    break;
+  case 1:
+    fill(255);
+    text("a journey like", 250,250);
+    break;
+  default:
+    println("None");
+    break;
+  }
   text("", width/2, height/2);
   if (mousePressed || keyPressed) {
     play = true;
