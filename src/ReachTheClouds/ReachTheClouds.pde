@@ -169,48 +169,48 @@ void gameOver() {
 
 //Step 1: Initialize Timer
 
-Action: Start a timer when the game begins.
-Purpose: Track how long the game has been running from the start screen to the gameplay.
-Step 2: Display Game Title and Timer Start
+//Action: Start a timer when the game begins.
+//Purpose: Track how long the game has been running from the start screen to the gameplay.
+//Step 2: Display Game Title and Timer Start
 
-Text: "Welcome to [Game Title]!"
-Timer: Show a clock or counter starting at 0:00 (minutes:seconds).
-Step 3: Initialize Game Setup
+//Text: "Welcome to [Game Title]!"
+//Timer: Show a clock or counter starting at 0:00 (minutes:seconds).
+//Step 3: Initialize Game Setup
 
-Action: As players choose characters, settings, etc., the timer continues running in the background.
-Step 4: Show Game Loading Screen
+//Action: As players choose characters, settings, etc., the timer continues running in the background.
+//Step 4: Show Game Loading Screen
 
-Text: "Loading your adventure..."
-Timer: Display time elapsed (e.g., "0:30" after 30 seconds of loading).
-Step 5: Display First Cutscene or Intro (If Applicable)
+//Text: "Loading your adventure..."
+//Timer: Display time elapsed (e.g., "0:30" after 30 seconds of loading).
+//step 5: Display First Cutscene or Intro (If Applicable)
 
-Text: "Prepare for the journey ahead!"
-Timer: Time continues to increase as the game intro runs.
-Step 6: Show Character Selection (If Applicable)
+//Text: "Prepare for the journey ahead!"
+//Timer: Time continues to increase as the game intro runs.
+//Step 6: Show Character Selection (If Applicable)
 
-Text: "Choose your hero."
-Timer: Time continues to count up as the player interacts with the selection.
-Step 7: Confirm Game Start
+//Text: "Choose your hero."
+//Timer: Time continues to count up as the player interacts with the selection.
+//Step 7: Confirm Game Start
 
-Text: "Are you ready to begin?"
-Timer: At this point, the game timer is running steadily.
-Step 8: Countdown to Start
+//Text: "Are you ready to begin?"
+//Timer: At this point, the game timer is running steadily.
+//Step 8: Countdown to Start
 
-Text: "Game starts in 3... 2... 1..."
-Timer: Timer still counts up, showing how much time has passed from the start of the game setup.
-Step 9: Gameplay Begins
+//Text: "Game starts in 3... 2... 1..."
+//Timer: Timer still counts up, showing how much time has passed from the start of the game setup.
+//Step 9: Gameplay Begins
 
-Text: "Let the adventure begin!"
-Timer: From this point onward, track game time actively (e.g., display "0:00" or "01:30" as game begins).
-Step 10: Pause Option (Optional)
+//Text: "Let the adventure begin!"
+//Timer: From this point onward, track game time actively (e.g., display "0:00" or "01:30" as game begins).
+//Step 10: Pause Option (Optional)
 
-Text: "Press 'P' to pause the game."
-Timer: When paused, the timer stops. On resume, it continues from where it left off.
-Step 11: Timer Display Throughout Gameplay
+//Text: "Press 'P' to pause the game."
+//Timer: When paused, the timer stops. On resume, it continues from where it left off.
+//Step 11: Timer Display Throughout Gameplay
 
-Text: The timer is displayed at the top or corner of the screen during the game.
-Timer: Show minutes and seconds counting upward (e.g., "3:45" for 3 minutes and 45 seconds of gameplay).
-Step 12: End of Game or Game Over
+//Text: The timer is displayed at the top or corner of the screen during the game.
+//Timer: Show minutes and seconds counting upward (e.g., "3:45" for 3 minutes and 45 seconds of gameplay).
+//Step 12: End of Game or Game Over
 
-Text: "Game Over! Your total time is: 12:35"
-Timer: Show the final time the player spent in the game (e.g., "Total time played: 15:45").
+//Text: "Game Over! Your total time is: 12:35"
+//Timer: Show the final time the player spent in the game (e.g., "Total time played: 15:45").
